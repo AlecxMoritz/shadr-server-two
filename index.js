@@ -9,13 +9,12 @@ const dislike = require('./controllers/dislikecontroller');
 const auth = require('./controllers/authcontroller');
 
 app.use(bodyParser.json());
-
 db.sync();
 
 app.use('/auth', auth);
 app.use('/users', user);
 app.use('/shades', shade);
-app.use('/dislike', dislike);
+app.use('/dislikes', dislike);
 
 
 app.listen(process.env.PORT, () => {

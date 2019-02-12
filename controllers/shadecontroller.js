@@ -149,4 +149,9 @@ router.delete('/:id', validateSession, (req, res) => {
         )
 });
 
+// dislike shade
+router.post('/dislike/:id', validateSession, (req, res) => {
+
+})
+
 module.exports = router;
