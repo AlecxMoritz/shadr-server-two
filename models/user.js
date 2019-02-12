@@ -1,6 +1,5 @@
 module.exports = (sequelize, DataTypes) => {
     return sequelize.define('user', {
-        // name
         name: {
             type: DataTypes.STRING,
             allowNull: false,
@@ -26,7 +25,14 @@ module.exports = (sequelize, DataTypes) => {
         },
 
         symbol: {
-            type: DataTypes.STRING,
+            type: DataTypes.ENUM,
+            values: [ '>', '<', '@', '#', '$', '%', '*', '!'],
+            allowNull: false,
+            defaultValue: '>'
+        },
+
+        userDislikes: {
+            type: DataTypes.ARRAY(DataTypes.INTEGER),
             allowNull: false
         }
     })
