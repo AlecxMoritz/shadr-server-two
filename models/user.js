@@ -34,6 +34,11 @@ module.exports = (sequelize, DataTypes) => {
         userDislikes: {
             type: DataTypes.ARRAY(DataTypes.INTEGER),
             allowNull: true
+        },
+
+        passwordHash: {
+            type: DataTypes.STRING,
+            allowNull: false
         }
     });
 };
