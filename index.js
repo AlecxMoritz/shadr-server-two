@@ -17,5 +17,5 @@ app.use('/dislike', dislike);
 
 
 app.listen(4000, () => {
-    console.log(`Running on ${process.env.PORT} -  Happy Hacking ;)`)
+    console.log(`Running on ${process.env.PORT} -  Happy Hacking ;)`);
 });

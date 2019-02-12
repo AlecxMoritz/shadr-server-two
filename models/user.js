@@ -33,7 +33,7 @@ module.exports = (sequelize, DataTypes) => {
 
         userDislikes: {
             type: DataTypes.ARRAY(DataTypes.INTEGER),
-            allowNull: false
+            allowNull: true
         }
-    })
-}
+    });
+};
