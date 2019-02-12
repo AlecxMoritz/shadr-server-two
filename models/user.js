@@ -31,6 +31,7 @@ module.exports = (sequelize, DataTypes) => {
             defaultValue: '>'
         },
 
+        // remove these
         userDislikes: {
             type: DataTypes.ARRAY(DataTypes.INTEGER),
             allowNull: true
